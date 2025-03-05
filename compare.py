@@ -3,14 +3,16 @@ from difflib import Differ
 import sys
 from PIL import Image
 import os
-import webbrowser
 import pytesseract
 
 
 def extract_text_from_image(image_path):
     """从图片中提取文本"""
     # 设置 Tesseract 的 OCR 参数
-    custom_config = r'--oem 3 --psm 6 -c tessedit_char_whitelist=0123456789'
+    # custom_config = r'--oem 3 --psm 6'  # 默认参数
+    # custom_config = r'--oem 3 --psm 6 -c tessedit_char_whitelist=0123456789'  # 仅识别数字
+    custom_config = r'--oem 3 --psm 6 -l chi_sim' # 识别中文
+    # custom_config = r'--oem 3 --psm 6 -l eng' # 识别英文
 
     image = Image.open(image_path)
     text = pytesseract.image_to_string(image, config=custom_config)

@@ -37,17 +37,18 @@ pip install -r requirements.txt
     sudo apt-get install tesseract-ocr
     ```
     * Windows:
-    Download and install the Tesseract OCR engine from [Tesseract OCR for Windows](
+    Download and install the Tesseract OCR engine from [Tesseract OCR for Windows]
 
 ## Usage
 
 1. Prepare the two files (PDFs or images) you want to compare.
-2. Run the following command in the terminal:
+2. If you want to compare images, ensure set the Tesseract OCR engine path and language in the compare.py file.
+3. Run the following command in the terminal:
 ```bash
 python compare.py <file1> <file2>
 ```
 Replace `<file1>` and `<file2>` with the paths to the files you want to compare.
-3. The program will generate an HTML file output/diff_output.html and automatically open it in your default browser.
+4. The program will generate an HTML file output/diff_output.html and automatically open it in your default browser.
 
 ## Examples
 
