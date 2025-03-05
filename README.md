@@ -2,7 +2,7 @@
 
 This tool is designed to compare the text content of two PDF files or images and generate an HTML file that displays the differences in a format similar to VSCode's Git Diff view.
 
-[](./output/diff_output.html)
+![PDF and Image Diff Tool](./assets/output.png)
 
 ## Features
 

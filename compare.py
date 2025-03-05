@@ -42,7 +42,7 @@ def generate_html_diff(diff_result, file1_path, file2_path, output_path):
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PDF Diff</title>
+        <title>PDF and Image Diff Tool</title>
         <style>
             body {{
                 font-family: Arial, sans-serif;
